@@ -1,18 +1,24 @@
 import React from "react";
+import img1 from "../img/oral_cancer.jpg";
+import img2 from "../img/laryngeal.jpg";
+import img3 from "../img/breast.jpg";
+import img4 from "../img/thoracic.jpg";
+import img5 from "../img/gynae.jpg";
+import img6 from "../img/gastrointestinal.jpg";
 
 const Departments = () => {
   return (
     <>
-      <section id="departments" class="departments">
+      <section id="treatments" class="departments">
         <div class="container">
           <div class="section-title">
-            <h2>Departments</h2>
-            <p>
+            <h2>Treatments</h2>
+            {/* <p>
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
               quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
               Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            </p> */}
           </div>
 
           <div class="row">
@@ -24,27 +30,32 @@ const Departments = () => {
                     data-bs-toggle="tab"
                     href="#tab-1"
                   >
-                    Cardiology
+                    Oral Cancer Surgery
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-                    Neurology
+                    Laryngeal Surgery
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-                    Hepatology
+                    Breast Oncoplastic Surgery
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                    Pediatrics
+                    Thoracic Oncology
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
-                    Eye Care
+                    Gynae Oncology{" "}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-6">
+                    Gastrointestinal Oncology
                   </a>
                 </li>
               </ul>
@@ -54,130 +65,134 @@ const Departments = () => {
                 <div class="tab-pane active show" id="tab-1">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Cardiology</h3>
+                      <h3>Oral Cancer Surgery</h3>
                       <p class="fst-italic">
-                        Qui laudantium consequatur laborum sit qui ad sapiente
-                        dila parde sonata raqer a videna mareta paulona marka
+                        Oral Cancer Surgery including Tongue Compartment Surgery
                       </p>
                       <p>
-                        Et nobis maiores eius. Voluptatibus ut enim blanditiis
-                        atque harum sint. Laborum eos ipsum ipsa odit magni.
-                        Incidunt hic ut molestiae aut qui. Est repellat minima
-                        eveniet eius et quis magni nihil. Consequatur dolorem
-                        quaerat quos qui similique accusamus nostrum rem vero
+                        Oral cancer or mouth cancer, a type of head and neck
+                        cancer, is any cancerous tissue growth located in the
+                        oral cavity. <br />
+                        <br /> There are several types of oral cancers, but
+                        around 90% are squamous cell carcinomas, originating in
+                        the tissues that line the mouth and lips. <br />
+                        <br /> Oral or mouth cancer most commonly involves the
+                        tongue. It may also occur on the floor of the mouth,
+                        cheek lining, gingiva (gums), lips, or palate (roof of
+                        the mouth).
                       </p>
                     </div>
                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img
-                        src="assets/img/departments-1.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
+                      <img src={img1} alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane" id="tab-2">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Et blanditiis nemo veritatis excepturi</h3>
+                      <h3> Laryngeal Surgery</h3>
                       <p class="fst-italic">
-                        Qui laudantium consequatur laborum sit qui ad sapiente
-                        dila parde sonata raqer a videna mareta paulona marka
+                        Laryngeal Surgery including transoral laser surgery
                       </p>
                       <p>
-                        Ea ipsum voluptatem consequatur quis est. Illum error
-                        ullam omnis quia et reiciendis sunt sunt est. Non
-                        aliquid repellendus itaque accusamus eius et velit ipsa
-                        voluptates. Optio nesciunt eaque beatae accusamus lerode
-                        pakto madirna desera vafle de nideran pal
+                        With cancer of the larynx (laryngeal cancer), malignant
+                        cells grow in the tissue of the larynx. Most laryngeal
+                        cancers form in squamous cells, the flat cells that line
+                        the inside of the larynx.
                       </p>
                     </div>
                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img
-                        src="assets/img/departments-2.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
+                      <img src={img2} alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane" id="tab-3">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                      <h3>Breast Oncoplastic Surgery</h3>
                       <p class="fst-italic">
-                        Eos voluptatibus quo. Odio similique illum id quidem non
-                        enim fuga. Qui natus non sunt dicta dolor et. In
-                        asperiores velit quaerat perferendis aut
+                        Senology including breast Oncoplastic Surgery
                       </p>
                       <p>
-                        Iure officiis odit rerum. Harum sequi eum illum corrupti
-                        culpa veritatis quisquam. Neque necessitatibus illo
-                        rerum eum ut. Commodi ipsam minima molestiae sed
-                        laboriosam a iste odio. Earum odit nesciunt fugiat sit
-                        ullam. Soluta et harum voluptatem optio quae
+                        It is characterized by uncontolled growth in breast
+                        tissues which may arise from lobules which secrte milk
+                        or ducts (most common) in which milk flaws.
+                        <br />
+                        <br />
+                        When “controls” in breast cells are not working properly
+                        and allows continuous growth then cancer forms. There it
+                        forms hard lump or swelling and over the time it
+                        increases in size called as localized disease-stage I or
+                        II.
+                        <br />
+                        <br />
+                        Over time, cancer cells can invade nearby healthy breast
+                        tissue and make their way into the underarm lymph nodes
+                        called locoregional disease-stage III.
+                        <br />
+                        <br />
+                        And finally goes to another parts of body via blood like
+                        bones,liver,lungs,brain etc, called distant
+                        disease-stage IV.
                       </p>
                     </div>
                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img
-                        src="assets/img/departments-3.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
+                      <img src={img3} alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane" id="tab-4">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>
-                        Fuga dolores inventore laboriosam ut est accusamus
-                        laboriosam dolore
-                      </h3>
+                      <h3>Thoracic Oncology</h3>
                       <p class="fst-italic">
-                        Totam aperiam accusamus. Repellat consequuntur iure
-                        voluptas iure porro quis delectus
-                      </p>
-                      <p>
-                        Eaque consequuntur consequuntur libero expedita in
-                        voluptas. Nostrum ipsam necessitatibus aliquam fugiat
-                        debitis quis velit. Eum ex maxime error in consequatur
-                        corporis atque. Eligendi asperiores sed qui veritatis
-                        aperiam quia a laborum inventore
+                        Thoracic Oncology including Esophagus & Lung cancer
+                        Surgeries
                       </p>
                     </div>
                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img
-                        src="assets/img/departments-4.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
+                      <img src={img4} alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane" id="tab-5">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>
-                        Est eveniet ipsam sindera pad rone matrelat sando reda
-                      </h3>
+                      <h3>Gynae Oncology</h3>
                       <p class="fst-italic">
-                        Omnis blanditiis saepe eos autem qui sunt debitis porro
-                        quia.
+                        Cancer Patients wiil continually do so, to provid an
+                        evidence-based high quality & focased approach to cancer
+                        care. With Radiation Therapy centre right on the corner
+                        at navsari, we are upgrading our services as a complete
+                        set up for diagnosis & treatment.We are responsive to
+                        the needs of patients & their families, & as a part of
+                        an ongoing modernization program, we are continally
+                        upgrading our services & equipments.
                       </p>
                       <p>
-                        Exercitationem nostrum omnis. Ut reiciendis repudiandae
-                        minus. Omnis recusandae ut non quam ut quod eius qui.
-                        Ipsum quia odit vero atque qui quibusdam amet. Occaecati
-                        sed est sint aut vitae molestiae voluptate vel
+                        Cancer Patients wiil continually do so, to provid an
+                        evidence-based high quality & focased approach to cancer
+                        care. With Radiation Therapy centre right on the corner
+                        at navsari, we are upgrading our services as a complete
+                        set up for diagnosis & treatment.We are responsive to
+                        the needs of patients & their families, & as a part of
+                        an ongoing modernization program, we are continally
+                        upgrading our services & equipments.
                       </p>
                     </div>
                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                      <img
-                        src="assets/img/departments-5.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
+                      <img src={img5} alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-6">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Gastrointestinal Oncology</h3>
+                      <p class="fst-italic">Gastrointestinal Oncology</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src={img6} alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>

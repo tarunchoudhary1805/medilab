@@ -10,20 +10,22 @@ import Hero from "../Components/Hero";
 import Services from "../Components/Services";
 import Testimonials from "../Components/Testimonials";
 import WhyChooseUs from "../Components/WhyChooseUs";
-import Footer from "../Shared/components/Footer";
+
+import Header from "../Shared/components/Header";
 
 const HomePage = () => {
   return (
     <div>
+      <Header />
       <Hero />
       <main id="main">
         <WhyChooseUs />
         <About />
-        <Services />
+        {/* <Services /> */}
         <Departments />
         <Doctors />
-        <Faqs />
-        <Testimonials />
+        {/* <Faqs /> */}
+        {/* <Testimonials /> */}
         <Appointment />
         <Gallery />
         <Contact />

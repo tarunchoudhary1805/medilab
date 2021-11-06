@@ -14,24 +14,24 @@ const About = () => {
             </div>
 
             <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-              <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-              <p>
-                Esse voluptas cumque vel exercitationem. Reiciendis est hic
-                accusamus. Non ipsam et sed minima temporibus laudantium. Soluta
-                voluptate sed facere corporis dolores excepturi. Libero
-                laboriosam sint et id nulla tenetur. Suscipit aut voluptate.
-              </p>
+              <h3>
+                “No cancer patient should deny treatment in any circumstances”
+                will be my final goal.
+              </h3>
 
               <div class="icon-box">
                 <div class="icon">
                   <i class="bx bx-fingerprint"></i>
                 </div>
                 <h4 class="title">
-                  <a href="">Lorem Ipsum</a>
+                  {/* <a href="">Lorem Ipsum</a> */}
                 </h4>
                 <p class="description">
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi sint occaecati cupiditate non provident
+                  Being in field of Surgical Oncology my aim is to provide high
+                  quality surgical care to all my cancer patients based on
+                  recent updates in oncology with excellent oncological as well
+                  as functional outcome comparable to high class international
+                  standards.
                 </p>
               </div>
 
@@ -40,11 +40,12 @@ const About = () => {
                   <i class="bx bx-gift"></i>
                 </div>
                 <h4 class="title">
-                  <a href="">Nemo Enim</a>
+                  {/* <a href="">Nemo Enim</a> */}
                 </h4>
                 <p class="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque
+                  My aim is to provide all supportive care beyond just only
+                  surgical care including all types of rehabilitation that every
+                  cancer patients again ready to take challenges of their life.
                 </p>
               </div>
 
@@ -53,11 +54,14 @@ const About = () => {
                   <i class="bx bx-atom"></i>
                 </div>
                 <h4 class="title">
-                  <a href="">Dine Pad</a>
+                  {/* <a href="">Dine Pad</a> */}
                 </h4>
                 <p class="description">
-                  Explicabo est voluptatum asperiores consequatur magnam. Et
-                  veritatis odit. Sunt aut deserunt minus aut eligendi omnis
+                  There are so many myths regarding cancer and its treatment in
+                  our indian society. So my ultimate purpose in oncology to
+                  educate all people regarding basics of cancer and how to fight
+                  against cancer that it can translate into less suffering to
+                  cancer patients.
                 </p>
               </div>
             </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import docter1 from "../img/shamsuddin.jpg";
+import doctor2 from "../img/bijal.jpg";
 
 const Doctors = () => {
   return (
@@ -7,31 +9,20 @@ const Doctors = () => {
         <div class="container">
           <div class="section-title">
             <h2>Doctors</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <p></p>
           </div>
 
           <div class="row">
             <div class="col-lg-6">
               <div class="member d-flex align-items-start">
                 <div class="pic">
-                  <img
-                    src="assets/img/doctors/doctors-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src={docter1} class="img-fluid" alt="" />
                 </div>
                 <div class="member-info">
-                  <h4>Walter White</h4>
-                  <span>Chief Medical Officer</span>
-                  <p>
-                    Explicabo voluptatem mollitia et repellat qui dolorum quasi
-                  </p>
-                  <div class="social">
+                  <h4>Dr. Shamsuddin J. Virani</h4>
+                  {/* <span>M.S.</span> */}
+                  <p>M.S. DNB Surgical Oncology, <br /> (Consulting Oncosurgeon)</p>
+                  {/* <div class="social">
                     <a href="">
                       <i class="ri-twitter-fill"></i>
                     </a>
@@ -45,7 +36,7 @@ const Doctors = () => {
                       {" "}
                       <i class="ri-linkedin-box-fill"></i>{" "}
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -53,103 +44,17 @@ const Doctors = () => {
             <div class="col-lg-6 mt-4 mt-lg-0">
               <div class="member d-flex align-items-start">
                 <div class="pic">
-                  <img
-                    src="assets/img/doctors/doctors-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src={doctor2} class="img-fluid" alt="" />
                 </div>
                 <div class="member-info">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Anesthesiologist</span>
+                  <h4>Dr. Bijal S. Virani</h4>
+                  {/* <span>Anesthesiologist</span> */}
                   <p>
-                    Aut maiores voluptates amet et quis praesentium qui senda
-                    para
+                    M.D. Anaesthesiology, <br />
+                    Fellowship in pain & Palliative care,
+                    <br />
+                    (Pain & Palliative care consultant & Anaesthesiologist)
                   </p>
-                  <div class="social">
-                    <a href="">
-                      <i class="ri-twitter-fill"></i>
-                    </a>
-                    <a href="">
-                      <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="">
-                      <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="">
-                      {" "}
-                      <i class="ri-linkedin-box-fill"></i>{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 mt-4">
-              <div class="member d-flex align-items-start">
-                <div class="pic">
-                  <img
-                    src="assets/img/doctors/doctors-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>William Anderson</h4>
-                  <span>Cardiology</span>
-                  <p>
-                    Quisquam facilis cum velit laborum corrupti fuga rerum quia
-                  </p>
-                  <div class="social">
-                    <a href="">
-                      <i class="ri-twitter-fill"></i>
-                    </a>
-                    <a href="">
-                      <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="">
-                      <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="">
-                      {" "}
-                      <i class="ri-linkedin-box-fill"></i>{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 mt-4">
-              <div class="member d-flex align-items-start">
-                <div class="pic">
-                  <img
-                    src="assets/img/doctors/doctors-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Neurosurgeon</span>
-                  <p>
-                    Dolorum tempora officiis odit laborum officiis et et
-                    accusamus
-                  </p>
-                  <div class="social">
-                    <a href="">
-                      <i class="ri-twitter-fill"></i>
-                    </a>
-                    <a href="">
-                      <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="">
-                      <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="">
-                      {" "}
-                      <i class="ri-linkedin-box-fill"></i>{" "}
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>

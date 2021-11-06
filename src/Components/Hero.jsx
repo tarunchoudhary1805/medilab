@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <section id="hero" class="d-flex align-items-center">
         <div class="container">
-          <h1>Welcome to lorem</h1>
+          <h1>Welcome to Kiran Hospital </h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
             voluptatem.

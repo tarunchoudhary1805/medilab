@@ -7,19 +7,14 @@ const Contact = () => {
         <div class="container">
           <div class="section-title">
             <h2>Contact</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <p></p>
           </div>
         </div>
 
         <div>
           <iframe
-            style={{border:"0", width: "100%", height: "350px"}}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            style={{ border: "0", width: "100%", height: "350px" }}
+            src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sKiran+Multi+Super+Speciality+Hospital!6i13"
             frameborder="0"
             allowfullscreen
           ></iframe>
@@ -32,19 +27,22 @@ const Contact = () => {
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>
+                    Kiran Multi Super Speciality Hospital & Research Center,Nr
+                    Sumul Dairy, Surat - 395004
+                  </p>
                 </div>
 
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>drsjvirani@gmail.com</p>
                 </div>
 
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>+91 98798 55522</p>
                 </div>
               </div>
             </div>

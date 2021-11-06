@@ -35,55 +35,76 @@ const Footer = () => {
                     <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                    <i class="bx bx-chevron-right"></i>{" "}
+                    <a href="#">Doctors Profile</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Terms of service</a>
+                    <a href="#">Treatments</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Privacy policy</a>
+                    <a href="#">Facilities</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">Gallery</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>{" "}
+                    <a href="#">Contact Us</a>
                   </li>
                 </ul>
               </div>
 
               <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Services</h4>
+                <h4>Specialist In</h4>
                 <ul>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Web Design</a>
+                    <a href="#">Oral Cancer Suregery</a>
+                  </li>
+
+                  <li>
+                    <i class="bx bx-chevron-right"></i>{" "}
+                    <a href="#">Laryngeal Surgery</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Web Development</a>
+                    <a href="#">Breast Oncoplastic Surgery</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Product Management</a>
+                    <a href="#">Thoracic Oncology</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Marketing</a>
+                    <a href="#">Gynae Oncology</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Graphic Design</a>
+                    <a href="#">Gastrointestinal Oncology</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>{" "}
+                    <a href="#">Hepatobiliary Surgery</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>{" "}
+                    <a href="#">Uro Oncology</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>{" "}
+                    <a href="#">Bone & Soft Tissue Tumors</a>
                   </li>
                 </ul>
               </div>
 
               <div class="col-lg-4 col-md-6 footer-newsletter">
-                <h4>Join Our Newsletter</h4>
+                <h4>Know Us</h4>
                 <p>
-                  Tamen quem nulla quae legam multos aute sint culpa legam
-                  noster magna
+                  Cancer Patients wiil continually do so, to provid an
+                  evidence-based high quality & focased approach to cancer care.
                 </p>
-                <form action="" method="post">
-                  <input type="email" name="email" />
-                  <input type="submit" value="Subscribe" />
-                </form>
               </div>
             </div>
           </div>
@@ -92,31 +113,22 @@ const Footer = () => {
         <div class="container d-md-flex py-4">
           <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-              &copy; Copyright{" "}
+              &copy; Copyright {new Date().getFullYear()}
               <strong>
-                <span>Medilab</span>
+                <span> Kiran Hospital</span>
               </strong>
               . All Rights Reserved
             </div>
-            <div class="credits">
-              Designed by <a href="#">Himanshu</a>
-            </div>
           </div>
           <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="#" class="twitter">
+            <a href="https://twitter.com/viranicancer" class="twitter">
               <i class="bx bxl-twitter"></i>
             </a>
-            <a href="#" class="facebook">
+            <a
+              href="https://www.facebook.com/suratcancerhospital"
+              class="facebook"
+            >
               <i class="bx bxl-facebook"></i>
-            </a>
-            <a href="#" class="instagram">
-              <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="#" class="google-plus">
-              <i class="bx bxl-skype"></i>
-            </a>
-            <a href="#" class="linkedin">
-              <i class="bx bxl-linkedin"></i>
             </a>
           </div>
         </div>

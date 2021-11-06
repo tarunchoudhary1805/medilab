@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "./../../img/logo.png";
 
 const Header = () => {
   return (
@@ -7,21 +9,18 @@ const Header = () => {
         <div class="container d-flex justify-content-between">
           <div class="contact-info d-flex align-items-center">
             <i class="bi bi-envelope"></i>{" "}
-            <a href="mailto:contact@example.com">contact@example.com</a>
-            <i class="bi bi-phone"></i> +1 5589 55488 55
+            <a href="mailto:contact@example.com">drsjvirani@gmail.com</a>
+            <i class="bi bi-phone"></i>+91 98798 55522
           </div>
           <div class="d-none d-lg-flex social-links align-items-center">
-            <a href="#" class="twitter">
+            <a href="https://twitter.com/viranicancer" class="twitter">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="#" class="facebook">
+            <a
+              href="https://www.facebook.com/suratcancerhospital"
+              class="facebook"
+            >
               <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="linkedin">
-              <i class="bi bi-linkedin"></i>{" "}
             </a>
           </div>
         </div>
@@ -30,7 +29,9 @@ const Header = () => {
       <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
           <h1 class="logo me-auto">
-            <a href="index.html">logo</a>
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
           </h1>
 
           <nav id="navbar" class="navbar order-last order-lg-0">
@@ -45,60 +46,59 @@ const Header = () => {
                   About
                 </a>
               </li>
-              <li>
-                <a class="nav-link scrollto" href="#services">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a class="nav-link scrollto" href="#departments">
-                  Departments
-                </a>
-              </li>
+
               <li>
                 <a class="nav-link scrollto" href="#doctors">
                   Doctors
                 </a>
               </li>
+              <li>
+                <a class="nav-link scrollto" href="#treatments">
+                  Treatments
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#doctors">
+                  Facilities
+                </a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#doctors">
+                  Gallery
+                </a>
+              </li>
               <li class="dropdown">
                 <a href="#">
-                  <span>Drop Down</span> <i class="bi bi-chevron-down"></i>
+                  <span>Specialist In</span> <i class="bi bi-chevron-down"></i>
                 </a>
                 <ul>
                   <li>
-                    <a href="#">Drop Down 1</a>
+                    <a href="#">Oral Cancer Suregery</a>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">
-                      <span>Deep Drop Down</span>{" "}
-                      <i class="bi bi-chevron-right"></i>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
+
+                  <li>
+                    <a href="#">Laryngeal Surgery</a>
                   </li>
                   <li>
-                    <a href="#">Drop Down 2</a>
+                    <a href="#">Breast Oncoplastic Surgery</a>
                   </li>
                   <li>
-                    <a href="#">Drop Down 3</a>
+                    <a href="#">Thoracic Oncology</a>
                   </li>
                   <li>
-                    <a href="#">Drop Down 4</a>
+                    <a href="#">Gynae Oncology</a>
+                  </li>
+                  <li>
+                    <a href="#">Gastrointestinal Oncology</a>
+                  </li>
+                  <li>
+                    <a href="#">Hepatobiliary Surgery</a>
+                  </li>
+                  <li>
+                    <a href="#">Uro Oncology</a>
+                  </li>
+                  <li>
+                    <a href="#">Bone & Soft Tissue Tumors</a>
                   </li>
                 </ul>
               </li>
