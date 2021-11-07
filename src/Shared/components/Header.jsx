@@ -134,9 +134,7 @@ const Header = () => {
                 </a>
                 <ul>
                   <li>
-                    <a href="#" onClick={handleClose}>
-                      Oral Cancer Suregery
-                    </a>
+                    <Link to="#" onClick={handleClose}>Oral Cancer Suregery</Link>
                   </li>
 
                   <li>
