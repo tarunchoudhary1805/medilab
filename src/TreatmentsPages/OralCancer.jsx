@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import oral_cancer from "../img/oral_cancer1.jpg";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 const OralCancer = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div>
       {" "}

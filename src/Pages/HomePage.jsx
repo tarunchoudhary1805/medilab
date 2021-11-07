@@ -12,8 +12,14 @@ import Testimonials from "../Components/Testimonials";
 import WhyChooseUs from "../Components/WhyChooseUs";
 
 import Header from "../Shared/components/Header";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 const HomePage = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div>
       <Header />

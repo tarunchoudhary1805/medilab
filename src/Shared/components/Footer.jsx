@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -60,41 +61,56 @@ const Footer = () => {
                 <h4>Specialist In</h4>
                 <ul>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Oral Cancer Suregery</a>
+                    <Link to="/oral_cancer">Oral Cancer Suregery</Link>
                   </li>
 
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Laryngeal Surgery</a>
+                    <Link to="/Laryngeal">Laryngeal Surgery</Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Breast Oncoplastic Surgery</a>
+                    <Link to="/BreastOncoplastic">
+                      Breast Oncoplastic Surgery
+                    </Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Thoracic Oncology</a>
+                    <Link to="/Thoracic">Thoracic Oncology</Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Gynae Oncology</a>
+                    <Link to="/Gynae">Gynae Oncology</Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Gastrointestinal Oncology</a>
+                    <Link to="/Gastrointestinal">
+                      Gastrointestinal Oncology
+                    </Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Hepatobiliary Surgery</a>
+                    <Link to="/Hepatobiliary">Hepatobiliary Surgery</Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Uro Oncology</a>
+                    <Link to="/UroOncology">Uro Oncology</Link>
                   </li>
                   <li>
+                    {" "}
                     <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Bone & Soft Tissue Tumors</a>
+                    <Link to="/BoneAndSoftTissue">
+                      Bone & Soft Tissue Tumors
+                    </Link>
                   </li>
                 </ul>
               </div>

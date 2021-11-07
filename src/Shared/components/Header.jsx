@@ -140,44 +140,44 @@ const Header = () => {
                   </li>
 
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/Laryngeal" onClick={handleClose}>
                       Laryngeal Surgery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/BreastOncoplastic" onClick={handleClose}>
                       Breast Oncoplastic Surgery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/Thoracic" onClick={handleClose}>
                       Thoracic Oncology
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/Gynae" onClick={handleClose}>
                       Gynae Oncology
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/Gastrointestinal" onClick={handleClose}>
                       Gastrointestinal Oncology
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/Hepatobiliary" onClick={handleClose}>
                       Hepatobiliary Surgery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/UroOncology" onClick={handleClose}>
                       Uro Oncology
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" onClick={handleClose}>
+                    <Link to="/BoneAndSoftTissue" onClick={handleClose}>
                       Bone & Soft Tissue Tumors
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

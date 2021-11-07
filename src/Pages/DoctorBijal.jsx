@@ -2,8 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Shared/css/style.css";
 import bijal from "../img/bijal1.jpg";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 const DoctorBijal = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div>
       {" "}

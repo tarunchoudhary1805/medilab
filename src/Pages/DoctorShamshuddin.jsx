@@ -2,8 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Shared/css/style.css";
 import shamshuddin from "../img/shamshuddin1.jpg";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 const DoctorShamshuddin = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div>
       {" "}
