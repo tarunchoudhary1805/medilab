@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <div>
       <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 footer-contact">
+        <div className="footer-top">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-3 col-md-6 footer-contact">
                 <h3>KIRAN HOSPITAL</h3>
                 <p>
                   <b>
@@ -26,88 +26,106 @@ const Footer = () => {
                 </p>
               </div>
 
-              <div class="col-lg-2 col-md-6 footer-links">
+              <div className="col-lg-2 col-md-6 footer-links">
                 <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                    <i className="bx bx-chevron-right"></i>
+                    <a className=" scrollto active" href="#hero">
+                      Home
+                    </a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                    <i className="bx bx-chevron-right"></i>
+                    <a className=" scrollto" href="#about">
+                      About
+                    </a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Doctors Profile</a>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <a className=" scrollto" href="#doctors">
+                      Doctors
+                    </a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Treatments</a>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <a className=" scrollto" href="#treatments">
+                      Treatments
+                    </a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Facilities</a>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <a className=" scrollto" href="#doctors">
+                      Facilities
+                    </a>
                   </li>
                   <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">Gallery</a>
-                  </li>
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <a className=" scrollto" href="#gallery">
+                      Gallery
+                    </a>
+                  </li>{" "}
                   <li>
-                    <i class="bx bx-chevron-right"></i>{" "}
-                    <a href="#">Contact Us</a>
+                    {" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
+                    <a className="  scrollto" href="#contact">
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </div>
 
-              <div class="col-lg-3 col-md-6 footer-links">
+              <div className="col-lg-3 col-md-6 footer-links">
                 <h4>Specialist In</h4>
                 <ul>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/oral_cancer">Oral Cancer Suregery</Link>
                   </li>
 
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/Laryngeal">Laryngeal Surgery</Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/BreastOncoplastic">
                       Breast Oncoplastic Surgery
                     </Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/Thoracic">Thoracic Oncology</Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/Gynae">Gynae Oncology</Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/Gastrointestinal">
                       Gastrointestinal Oncology
                     </Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/Hepatobiliary">Hepatobiliary Surgery</Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/UroOncology">Uro Oncology</Link>
                   </li>
                   <li>
                     {" "}
-                    <i class="bx bx-chevron-right"></i>{" "}
+                    <i className="bx bx-chevron-right"></i>{" "}
                     <Link to="/BoneAndSoftTissue">
                       Bone & Soft Tissue Tumors
                     </Link>
@@ -115,7 +133,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div class="col-lg-4 col-md-6 footer-newsletter">
+              <div className="col-lg-4 col-md-6 footer-newsletter">
                 <h4>Know Us</h4>
                 <p>
                   Cancer Patients wiil continually do so, to provid an
@@ -126,9 +144,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="container d-md-flex py-4">
-          <div class="me-md-auto text-center text-md-start">
-            <div class="copyright">
+        <div className="container d-md-flex py-4">
+          <div className="me-md-auto text-center text-md-start">
+            <div className="copyright">
               &copy; Copyright {new Date().getFullYear()}
               <strong>
                 <span> Kiran Hospital</span>
@@ -136,15 +154,15 @@ const Footer = () => {
               . All Rights Reserved
             </div>
           </div>
-          <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="https://twitter.com/viranicancer" class="twitter">
-              <i class="bx bxl-twitter"></i>
+          <div className="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="https://twitter.com/viranicancer" className="twitter">
+              <i className="bx bxl-twitter"></i>
             </a>
             <a
               href="https://www.facebook.com/suratcancerhospital"
-              class="facebook"
+              className="facebook"
             >
-              <i class="bx bxl-facebook"></i>
+              <i className="bx bxl-facebook"></i>
             </a>
           </div>
         </div>

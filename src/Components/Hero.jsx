@@ -7,12 +7,11 @@ const Hero = () => {
         <div class="container">
           <h1>Welcome to Kiran Hospital </h1>
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-            voluptatem.
+            
           </h2>
-          <a href="#about" class="btn-get-started scrollto">
+          {/* <a href="#about" class="btn-get-started scrollto">
             Get Started
-          </a>
+          </a> */}
         </div>
       </section>
     </>

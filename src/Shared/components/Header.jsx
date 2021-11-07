@@ -7,6 +7,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   let data = Number(localStorage.getItem("posts"));
   let data1 = Number(localStorage.getItem("services"));
+  const [dropdown, setDropdown] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 10) {
@@ -22,6 +23,10 @@ const Header = () => {
   };
   const handleClose = () => {
     setToggle(false);
+  };
+  const dropdownActive = () => {
+    setDropdown(!dropdown);
+    console.log("dropdown");
   };
   return (
     <>
@@ -129,10 +134,10 @@ const Header = () => {
                 </a>
               </li>
               <li class="dropdown">
-                <a href="#">
+                <Link to="#" onClick={dropdownActive} href="#">
                   <span>Specialist In</span> <i class="bi bi-chevron-down"></i>
-                </a>
-                <ul>
+                </Link>
+                <ul className={dropdown ? "dropdown-active" : "dropdown"}>
                   <li>
                     <Link to="/oral_cancer" onClick={handleClose}>
                       Oral Cancer Suregery
