@@ -1052,6 +1052,7 @@ section {
 }
 .doctors .member .pic {
   overflow: hidden;
+  /* height: 20vh; */
   width: 180px;
   border-radius: 50%;
 }
@@ -1604,4 +1605,9 @@ section {
   padding-right: 10px;
   color: #8894f6;
   content: "/";
+}
+.cardd {
+  border: 1px solid #c4c4c4;
+  padding: 2% 5%;
+  border-radius: 10px;
 }

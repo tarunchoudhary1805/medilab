@@ -4,6 +4,7 @@ import DoctorBijal from "../Pages/DoctorBijal";
 import DoctorShamshuddin from "../Pages/DoctorShamshuddin";
 
 import HomePage from "../Pages/HomePage";
+import OralCancer from "../TreatmentsPages/OralCancer";
 
 const PrimaryRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const PrimaryRoutes = () => {
         <Route exact path="/" element={<HomePage />} />
         <Route path="/dr_shamshuddin" element={<DoctorShamshuddin />} />
         <Route path="/dr_bijal" element={<DoctorBijal />} />
+        <Route path="/oral_cancer" element={<OralCancer />} />
       </Routes>
     </>
   );
