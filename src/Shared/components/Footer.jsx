@@ -14,10 +14,10 @@ const Footer = () => {
                   <b>
                     {" "}
                     Kiran Multi Super Speciality <br /> Hospital & Research
-                    Center
+                    Centre
                   </b>{" "}
                   <br /> Kiran Multi Super Speciality <br /> Hospital & Research
-                  Center , <br /> Nr Sumul Dairy, Surat - 395004 <br />
+                  Centre , <br /> Nr Sumul Dairy, Surat - 395004 <br />
                   <br />
                   <strong>Phone:</strong> +91 98798 55522
                   <br />
@@ -81,7 +81,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/oral_cancer">Oral Cancer Suregery</Link>
+                    <Link to="/oral_cancer">Oral Cancer Surgery</Link>
                   </li>
 
                   <li>
@@ -136,8 +136,8 @@ const Footer = () => {
               <div className="col-lg-4 col-md-6 footer-newsletter">
                 <h4>Know Us</h4>
                 <p>
-                  Cancer Patients wiil continually do so, to provid an
-                  evidence-based high quality & focased approach to cancer care.
+                  Cancer Patients will continually do so, to provide an
+                  evidence-based high quality & focused approach to cancer care.
                 </p>
               </div>
             </div>

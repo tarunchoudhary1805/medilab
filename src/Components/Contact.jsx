@@ -28,7 +28,7 @@ const Contact = () => {
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
                   <p>
-                    Kiran Multi Super Speciality Hospital & Research Center,Nr
+                    Kiran Multi Super Speciality Hospital & Research centre,Nr
                     Sumul Dairy, Surat - 395004
                   </p>
                 </div>
