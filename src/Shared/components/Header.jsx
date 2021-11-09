@@ -96,14 +96,13 @@ const Header = () => {
                   About
                 </a>
               </li>
-
               <li>
                 <a
                   class="nav-link scrollto"
                   onClick={handleClose}
-                  href="#doctors"
+                  href="#blogs"
                 >
-                  Doctors
+                  Blogs
                 </a>
               </li>
               <li>
@@ -121,9 +120,18 @@ const Header = () => {
                   onClick={handleClose}
                   href="#doctors"
                 >
-                  Facilities
+                  Doctors
                 </a>
               </li>
+              {/* <li>
+                <a
+                  class="nav-link scrollto"
+                  onClick={handleClose}
+                  href="#doctors"
+                >
+                  Facilities
+                </a>
+              </li> */}
               <li>
                 <a
                   class="nav-link scrollto"
@@ -155,7 +163,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Thoracic" onClick={handleClose}>
+                    <Link to="/" onClick={handleClose}>
                       Thoracic Oncology
                     </Link>
                   </li>
@@ -165,22 +173,22 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Gastrointestinal" onClick={handleClose}>
+                    <Link to="/" onClick={handleClose}>
                       Gastrointestinal Oncology
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Hepatobiliary" onClick={handleClose}>
+                    <Link to="/" onClick={handleClose}>
                       Hepatobiliary Surgery
                     </Link>
                   </li>
                   <li>
-                    <Link to="/UroOncology" onClick={handleClose}>
+                    <Link to="/" onClick={handleClose}>
                       Uro Oncology
                     </Link>
                   </li>
                   <li>
-                    <Link to="/BoneAndSoftTissue" onClick={handleClose}>
+                    <Link to="/" onClick={handleClose}>
                       Bone & Soft Tissue Tumors
                     </Link>
                   </li>

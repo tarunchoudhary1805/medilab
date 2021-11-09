@@ -1056,7 +1056,15 @@ section {
   width: 180px;
   border-radius: 50%;
 }
-.doctors .member .pic img {
+.doctors .member .pix {
+  overflow: hidden;
+  /* height: 20vh; */
+  width: 180px;
+  /* border-radius: 50%; */
+}
+ 
+ 
+.doctors .member .pix img {
   transition: ease-in-out 0.3s;
 }
 .doctors .member:hover img {

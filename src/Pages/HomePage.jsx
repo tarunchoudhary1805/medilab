@@ -14,6 +14,7 @@ import WhyChooseUs from "../Components/WhyChooseUs";
 import Header from "../Shared/components/Header";
 import { useEffect } from "react";
 import { useLocation } from "react-router";
+import BlogComp from "../Components/BlogComp";
 
 const HomePage = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const HomePage = () => {
       <main id="main">
         <WhyChooseUs />
         <About />
+        <BlogComp />
         {/* <Services /> */}
         <Departments />
         <Doctors />

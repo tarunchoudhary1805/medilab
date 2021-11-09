@@ -13,6 +13,7 @@ import Hepatobiliary from "../TreatmentsPages/Hepatobiliary";
 import Laryngeal from "../TreatmentsPages/Laryngeal";
 import Thoracic from "../TreatmentsPages/Thoracic";
 import UroOncolgy from "../TreatmentsPages/UroOncology";
+import Blogs from "../Pages/Blogs";
 
 const PrimaryRoutes = () => {
   return (
@@ -30,6 +31,7 @@ const PrimaryRoutes = () => {
         <Route path="/Laryngeal" element={<Laryngeal />} />
         <Route path="/Thoracic" element={<Thoracic />} />
         <Route path="/UroOncology" element={<UroOncolgy />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </>
   );

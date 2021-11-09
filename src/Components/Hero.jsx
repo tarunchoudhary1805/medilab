@@ -7,7 +7,8 @@ const Hero = () => {
         <div class="container">
           <h1>Welcome to Kiran Hospital </h1>
           <h2>
-            
+            Combining the best specialists and equipment to provide you nothing
+            short of the best in healthcare
           </h2>
           {/* <a href="#about" class="btn-get-started scrollto">
             Get Started

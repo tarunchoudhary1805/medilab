@@ -42,6 +42,12 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
+                    <i className="bx bx-chevron-right"></i>
+                    <a class="  scrollto" href="#blogs">
+                      Blogs
+                    </a>
+                  </li>
+                  <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <a className=" scrollto" href="#doctors">
                       Doctors
@@ -53,12 +59,12 @@ const Footer = () => {
                       Treatments
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <a className=" scrollto" href="#doctors">
                       Facilities
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <i className="bx bx-chevron-right"></i>{" "}
                     <a className=" scrollto" href="#gallery">
@@ -99,7 +105,7 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/Thoracic">Thoracic Oncology</Link>
+                    <Link to="/">Thoracic Oncology</Link>
                   </li>
                   <li>
                     {" "}
@@ -109,26 +115,22 @@ const Footer = () => {
                   <li>
                     {" "}
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/Gastrointestinal">
-                      Gastrointestinal Oncology
-                    </Link>
+                    <Link to="/">Gastrointestinal Oncology</Link>
                   </li>
                   <li>
                     {" "}
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/Hepatobiliary">Hepatobiliary Surgery</Link>
+                    <Link to="/">Hepatobiliary Surgery</Link>
                   </li>
                   <li>
                     {" "}
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/UroOncology">Uro Oncology</Link>
+                    <Link to="/">Uro Oncology</Link>
                   </li>
                   <li>
                     {" "}
                     <i className="bx bx-chevron-right"></i>{" "}
-                    <Link to="/BoneAndSoftTissue">
-                      Bone & Soft Tissue Tumors
-                    </Link>
+                    <Link to="/">Bone & Soft Tissue Tumors</Link>
                   </li>
                 </ul>
               </div>
