@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import DoctorBijal from "../Pages/DoctorBijal";
 import DoctorShamshuddin from "../Pages/DoctorShamshuddin";
 
@@ -14,25 +14,27 @@ import Laryngeal from "../TreatmentsPages/Laryngeal";
 import Thoracic from "../TreatmentsPages/Thoracic";
 import UroOncolgy from "../TreatmentsPages/UroOncology";
 import Blogs from "../Pages/Blogs";
+import Blog from "../Pages/Blog";
 
 const PrimaryRoutes = () => {
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/dr_shamshuddin" element={<DoctorShamshuddin />} />
-        <Route path="/dr_bijal" element={<DoctorBijal />} />
-        <Route path="/oral_cancer" element={<OralCancer />} />
-        <Route path="/BoneAndSoftTissue" element={<BoneAndSoftTissue />} />
-        <Route path="/BreastOncoplastic" element={<BreastOncoplastic />} />
-        <Route path="/Gastrointestinal" element={<Gastrointestinal />} />
-        <Route path="/Gynae" element={<Gynae />} />
-        <Route path="/Hepatobiliary" element={<Hepatobiliary />} />
-        <Route path="/Laryngeal" element={<Laryngeal />} />
-        <Route path="/Thoracic" element={<Thoracic />} />
-        <Route path="/UroOncology" element={<UroOncolgy />} />
-        <Route path="/blogs" element={<Blogs />} />
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/dr_shamshuddin" component={DoctorShamshuddin} />
+        <Route path="/dr_bijal" component={DoctorBijal} />
+        <Route path="/oral_cancer" component={OralCancer} />
+        <Route path="/BoneAndSoftTissue" component={BoneAndSoftTissue} />
+        <Route path="/BreastOncoplastic" component={BreastOncoplastic} />
+        <Route path="/Gastrointestinal" component={Gastrointestinal} />
+        <Route path="/Gynae" component={Gynae} />
+        <Route path="/Hepatobiliary" component={Hepatobiliary} />
+        <Route path="/Laryngeal" component={Laryngeal} />
+        <Route path="/Thoracic" component={Thoracic} />
+        <Route path="/UroOncology" component={UroOncolgy} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/blog" component={Blog} />
+      </Switch>
     </>
   );
 };

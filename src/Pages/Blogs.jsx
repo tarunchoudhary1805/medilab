@@ -1,49 +1,33 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Shared/css/style.css";
-
+import ReactHtmlParser from "react-html-parser";
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-const Blogs = () => {
-  const [blogs, setBlogs] = useState([
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-  ]);
+const Blogs = (props) => {
+  const [blogs, setBlogs] = useState();
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await fetch(
+          "https://vardaa.herokuapp.com/getAllBlogs"
+        );
+        const val = await response.json();
+        console.log(val);
+        if (val) {
+          setBlogs(val);
+        }
+      } catch (error) {
+        console.log(error.message);
+      }
+    })();
+  }, []);
   return (
     <div>
       <section class="breadcrumbs" style={{ marginTop: "0px" }}>
@@ -68,21 +52,24 @@ const Blogs = () => {
             {blogs?.map((item, i) => (
               <>
                 <div class="col-lg-6">
-                  <Link to="/dr_shamshuddin">
+                  <Link to={{ pathname: "/blog", state: item }}>
                     <div class="member d-flex align-items-start">
                       <div class="pix">
-                        <img
-                          src="https://dummyimage.com/600x400/000/fff"
-                          class="img-fluid"
-                          alt=""
-                        />
+                        <img src={item.img} class="img-fluid" alt="" />
                       </div>
                       <div class="member-info">
-                        <h4>Dr. Shamsuddin J. Virani</h4>
+                        <h4>
+                          {item.title.length > 40
+                            ? `${item.title.slice(0, 40)}. . .`
+                            : item.title}
+                        </h4>
                         {/* <span>M.S.</span> */}
                         <p style={{ color: "#000" }}>
-                          M.S. DNB Surgical Oncology, <br /> (Consulting
-                          Oncosurgeon)
+                          {item.description.length > 40
+                            ? `${ReactHtmlParser(
+                                item.description.slice(0, 40)
+                              )}. . .`
+                            : ReactHtmlParser(item.description)}
                         </p>
                       </div>
                     </div>
