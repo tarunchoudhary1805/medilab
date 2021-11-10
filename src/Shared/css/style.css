@@ -1628,7 +1628,9 @@ section {
 }
 .cardd {
   border: 1px solid #c4c4c4;
-  padding: 2% 5%;
+  padding: 2% 3%;
+  margin: 0 auto;
+  width: 95%;
   border-radius: 10px;
 }
 
@@ -1736,6 +1738,12 @@ section {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.img-logo{
+.img-logo {
   width: 20%;
+}
+
+@media (max-width: 768px) {
+  .img-logo {
+    width: 40%;
+  }
 }
