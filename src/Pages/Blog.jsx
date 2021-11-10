@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import { useEffect } from "react";
 import { useLocation } from "react-router";
+import logo from "../img/logo.png";
 
 const Blog = (props) => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const Blog = (props) => {
           <h2> Blog </h2>
         </div>
       </section>
+
       <section id="team" class="team">
         <div class="container" data-aos="fade-up">
           {/* </ */}
@@ -37,22 +39,16 @@ const Blog = (props) => {
                 <div className="card-body">
                   <h5 className="card-title">
                     <div
-                      className="d-flex image"
+                      className="d-flex image justify-content-center"
                       style={{ alignItems: "center" }}
                     >
-                      {/* <img src={heroImg} className="card-img mr-2 " alt="..." /> */}
-                      {/* <div>
-                        <h4>HeaveN Real Estate</h4>
-                        <p
-                          style={{
-                            fontSize: "12px",
-                            padding: 0,
-                            margin: 0,
-                          }}
-                        >
-                          {moment(item.created_at).fromNow()}
-                        </p>
-                      </div> */}
+                      <img
+                        src={logo}
+                        className="img-logo "
+                        // style={{ width: "30%" }}
+                        alt="..."
+                      />
+                      
                     </div>{" "}
                     <div> </div>
                     {/* <div className="d-flex"></div> */}
@@ -72,19 +68,7 @@ const Blog = (props) => {
                       <b>{item.title}</b>
                     </h3>
                     <p className="card-text p-1 para  ">
-                      {!readmore && item.description.length > 40
-                        ? `${ReactHtmlParser(
-                            item.description.slice(0, 40)
-                          )}. . .`
-                        : ReactHtmlParser(item.description)}
-                      <a
-                        onClick={() => setReadmore(!readmore)}
-                        className="btn text-dark"
-                        style={{ border: "none", outline: "none" }}
-                      >
-                        {item.description.length > 100 &&
-                          `${!readmore ? "Read More" : "Read Less"}`}
-                      </a>
+                      {ReactHtmlParser(item.description)}
                     </p>
                   </div>
                 </div>

@@ -1065,7 +1065,7 @@ section {
   width: 40%;
   border-radius: 5%;
   align-items: center;
-  
+
   /* border-radius: 50%; */
 }
 
@@ -1630,4 +1630,112 @@ section {
   border: 1px solid #c4c4c4;
   padding: 2% 5%;
   border-radius: 10px;
+}
+
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.team .member1 {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+}
+
+.team .member1 .member-img1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member1 .member-img1:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  /* background: url(../../assets/img/team-shape.svg) no-repeat center bottom; */
+  background-size: contain;
+  z-index: 1;
+}
+
+.team .member1 .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.team .member1 .social a {
+  transition: color 0.3s;
+  color: rgba(1, 41, 112, 0.5);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+.team .member1 .social a:hover {
+  color: rgba(1, 41, 112, 0.8);
+}
+
+.team .member1 .social i {
+  font-size: 18px;
+}
+
+.team .member1 .member-info1 {
+  padding: 10px 15px 20px 15px;
+}
+
+.team .member1 .member-info1 h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #012970;
+}
+
+.team .member1 .member-info1 span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member1 .member-info1 p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: #5e5e5e;
+}
+
+.team .member1:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.team .member:hover .social {
+  right: 8px;
+  opacity: 1;
+}
+
+.span {
+  display: inline-block;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.img-logo{
+  width: 20%;
 }
