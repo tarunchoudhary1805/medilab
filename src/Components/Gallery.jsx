@@ -6,7 +6,7 @@ const Gallery = () => {
     (async () => {
       try {
         const response = await fetch(
-          "https://vardaa.herokuapp.com/getAllBlogs"
+          "https://vardaa.herokuapp.com/getAllGallery"
         );
         const val = await response.json();
         console.log(val);

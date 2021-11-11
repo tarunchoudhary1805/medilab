@@ -50,19 +50,23 @@ const Blog = (props) => {
                         alt="..."
                       />
                     </div>{" "}
-                   
                     {/* <div className="d-flex"></div> */}
                   </h5>
                 </div>
                 <div className="">
-                  <div className=" w-100 mx-auto mb-5">
+                  <div className=" w-100 mx-auto mb-2">
                     <img
                       src={item.img}
                       className=" img card-img-top  "
                       alt="..."
                       style={{ borderRadius: "8px" }}
-                    />   <div> {moment(item.created_at).fromNow()} </div>
+                    />
                   </div>
+                  <div className=" mx-2">
+                    {" "}
+                    {moment(item.created_at).fromNow()}{" "}
+                  </div>{" "}
+                  <br />
                   <div className=" mx-2">
                     <h3 className="text-dark">
                       <b>{item.title}</b>
