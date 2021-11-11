@@ -39,8 +39,8 @@ const Blog = (props) => {
               <div className="car my-3 p-2">
                 <div className="card-body">
                   <h5 className="card-title">
-                    {/* <div
-                      className="d-flex image justify-content-center"
+                    <div
+                      className="d-flex image justify-content-left"
                       style={{ alignItems: "center" }}
                     >
                       <img
@@ -49,8 +49,8 @@ const Blog = (props) => {
                         // style={{ width: "30%" }}
                         alt="..."
                       />
-                    </div>{" "} */}
-                    <div> </div>
+                    </div>{" "}
+                   
                     {/* <div className="d-flex"></div> */}
                   </h5>
                 </div>
@@ -61,7 +61,7 @@ const Blog = (props) => {
                       className=" img card-img-top  "
                       alt="..."
                       style={{ borderRadius: "8px" }}
-                    />
+                    />   <div> {moment(item.created_at).fromNow()} </div>
                   </div>
                   <div className=" mx-2">
                     <h3 className="text-dark">

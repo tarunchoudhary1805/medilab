@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [data, setData] = useState({
+    name: "",
+    phone_number: "",
+    subject: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+  const submit = async () => {
+    console.log(data);
+    try {
+      const response = await fetch("https://vardaa.herokuapp.com/kiranemail", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      const value = await response.json();
+      console.log(value);
+      // if (value) {/
+      // setData(value);
+      // }
+    } catch (error) {
+      console.log(error.message);
+    }
+    setData({ name: "", phone_number: "", subject: "", message: "" });
+  };
   return (
     <>
       <section id="contact" class="contact">
@@ -61,17 +91,21 @@ const Contact = () => {
                       name="name"
                       class="form-control"
                       id="name"
+                      onChange={handleChange}
+                      value={data.name}
                       placeholder="Your Name"
                       required
                     />
                   </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div class="col-md-6 form-group">
                     <input
-                      type="email"
+                      type="text"
+                      name="name"
                       class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="Your Email"
+                      id="phone_number"
+                      onChange={handleChange}
+                      value={data.phone_number}
+                      placeholder="Contact Number"
                       required
                     />
                   </div>
@@ -82,6 +116,8 @@ const Contact = () => {
                     class="form-control"
                     name="subject"
                     id="subject"
+                    onChange={handleChange}
+                    value={data.subject}
                     placeholder="Subject"
                     required
                   />
@@ -90,20 +126,18 @@ const Contact = () => {
                   <textarea
                     class="form-control"
                     name="message"
+                    onChange={handleChange}
+                    value={data.message}
                     rows="5"
                     placeholder="Message"
                     required
                   ></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
+
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="button" onClick={submit}>
+                    Send Message
+                  </button>
                 </div>
               </form>
             </div>

@@ -1,23 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Appointment = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone_number: "",
+    doctor: "",
+    message: "",
+    appointment_date: "",
+    appointment_time: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+  const submit = async () => {
+    console.log(data);
+    try {
+      const response = await fetch(
+        "https://vardaa.herokuapp.com/kiranappointment",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      const value = await response.json();
+      console.log(value);
+      // if (value) {/
+      // setData(value);
+      // }
+    } catch (error) {
+      console.log(error.message);
+    }
+    setData({
+      name: "",
+      email: "",
+      phone_number: "",
+      doctor: "",
+      message: "",
+      appointment_date: "",
+      appointment_time: "",
+    });
+  };
   return (
     <>
       <section id="appointment" class="appointment section-bg">
         <div class="container">
           <div class="section-title">
             <h2>Make an Appointment</h2>
-            <p>
-              
-            </p>
+            <p></p>
           </div>
 
-          <form
-            action="forms/appointment.php"
-            method="post"
-            role="form"
-            class="php-email-form"
-          >
+          <form role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-4 form-group">
                 <input
@@ -26,8 +63,8 @@ const Appointment = () => {
                   class="form-control"
                   id="name"
                   placeholder="Your Name"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
+                  value={data.name}
+                  onChange={handleChange}
                 />
                 <div class="validate"></div>
               </div>
@@ -37,9 +74,9 @@ const Appointment = () => {
                   class="form-control"
                   name="email"
                   id="email"
+                  value={data.email}
+                  onChange={handleChange}
                   placeholder="Your Email"
-                  data-rule="email"
-                  data-msg="Please enter a valid email"
                 />
                 <div class="validate"></div>
               </div>
@@ -47,11 +84,11 @@ const Appointment = () => {
                 <input
                   type="tel"
                   class="form-control"
-                  name="phone"
+                  name="phone_number"
+                  value={data.phone_number}
+                  onChange={handleChange}
                   id="phone"
                   placeholder="Your Phone"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
                 />
                 <div class="validate"></div>
               </div>
@@ -59,31 +96,42 @@ const Appointment = () => {
             <div class="row">
               <div class="col-md-4 form-group mt-3">
                 <input
-                  type="datetime"
-                  name="date"
+                  type="date"
+                  name="appointment_date"
                   class="form-control datepicker"
                   id="date"
+                  value={data.appointment_date}
+                  onChange={handleChange}
                   placeholder="Appointment Date"
-                  data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
                 />
                 <div class="validate"></div>
               </div>
               <div class="col-md-4 form-group mt-3">
-                <select name="department" id="department" class="form-select">
-                  <option value="">Select Department</option>
-                  <option value="Department 1">Department 1</option>
-                  <option value="Department 2">Department 2</option>
-                  <option value="Department 3">Department 3</option>
-                </select>
-                <div class="validate"></div>
+                <input
+                  type="time"
+                  name="appointment_time"
+                  class="form-control datepicker"
+                  id="date"
+                  value={data.appointment_time}
+                  onChange={handleChange}
+                  placeholder="Appointment Time"
+                />
               </div>
               <div class="col-md-4 form-group mt-3">
-                <select name="doctor" id="doctor" class="form-select">
-                  <option value="">Select Doctor</option>
-                  <option value="Doctor 1">Doctor 1</option>
-                  <option value="Doctor 2">Doctor 2</option>
-                  <option value="Doctor 3">Doctor 3</option>
+                <select
+                  name="doctor"
+                  id="doctor"
+                  onChange={handleChange}
+                  value={data.doctor}
+                  class="form-select"
+                >
+                  <option value=""> Doctor</option>
+                  <option value="Dr. Shamsuddin J. Virani">
+                    Dr. Shamsuddin J. Virani
+                  </option>
+                  <option value="Dr. Bijal S. Virani">
+                    Dr. Bijal S. Virani
+                  </option>
                 </select>
                 <div class="validate"></div>
               </div>
@@ -93,20 +141,18 @@ const Appointment = () => {
               <textarea
                 class="form-control"
                 name="message"
+                value={data.message}
+                onChange={handleChange}
                 rows="5"
                 placeholder="Message (Optional)"
               ></textarea>
               <div class="validate"></div>
             </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your appointment request has been sent successfully. Thank you!
-              </div>
-            </div>
+
             <div class="text-center">
-              <button type="submit">Make an Appointment</button>
+              <button type="button" onClick={submit}>
+                Make an Appointment
+              </button>
             </div>
           </form>
         </div>

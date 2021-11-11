@@ -973,7 +973,7 @@ section {
 .appointment .php-email-form textarea {
   padding: 10px 12px;
 }
-.appointment .php-email-form button[type="submit"] {
+.appointment .php-email-form button[type="button"] {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -981,7 +981,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-.appointment .php-email-form button[type="submit"]:hover {
+.appointment .php-email-form button[type="button"]:hover {
   background: #1c84e3;
 }
 
@@ -1413,7 +1413,7 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="button"] {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -1421,7 +1421,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type="button"]:hover {
   background: #1c84e3;
 }
 @-webkit-keyframes animate-loading {
@@ -1534,7 +1534,7 @@ section {
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
-#footer .footer-newsletter form input[type="submit"] {
+#footer .footer-newsletter form input[type="button"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1548,7 +1548,7 @@ section {
   transition: 0.3s;
   border-radius: 50px;
 }
-#footer .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-newsletter form input[type="button"]:hover {
   background: #1c84e3;
 }
 #footer .credits {
