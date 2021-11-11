@@ -5,6 +5,7 @@ import ReactHtmlParser from "react-html-parser";
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 import logo from "../img/logo.png";
+import "./Blog.scss";
 
 const Blog = (props) => {
   const location = useLocation();
@@ -38,7 +39,7 @@ const Blog = (props) => {
               <div className="car my-3 p-2">
                 <div className="card-body">
                   <h5 className="card-title">
-                    <div
+                    {/* <div
                       className="d-flex image justify-content-center"
                       style={{ alignItems: "center" }}
                     >
@@ -48,14 +49,13 @@ const Blog = (props) => {
                         // style={{ width: "30%" }}
                         alt="..."
                       />
-                      
-                    </div>{" "}
+                    </div>{" "} */}
                     <div> </div>
                     {/* <div className="d-flex"></div> */}
                   </h5>
                 </div>
                 <div className="">
-                  <div className=" w-50 mx-auto mb-5">
+                  <div className=" w-100 mx-auto mb-5">
                     <img
                       src={item.img}
                       className=" img card-img-top  "
@@ -64,10 +64,13 @@ const Blog = (props) => {
                     />
                   </div>
                   <div className=" mx-2">
-                    <h3>
+                    <h3 className="text-dark">
                       <b>{item.title}</b>
                     </h3>
-                    <p className="card-text p-1 para  ">
+                    <p className="card-text   para text-secondary  ">
+                      {item.short_description}
+                    </p>
+                    <p className="card-text   para text-secondary  ">
                       {ReactHtmlParser(item.description)}
                     </p>
                   </div>

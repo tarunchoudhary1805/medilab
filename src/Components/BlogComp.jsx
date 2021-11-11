@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import "../Shared/css/style.css";
+import ReadMoreReact from "read-more-react";
 
 const BlogComp = () => {
   const [blogs, setBlogs] = useState([]);
@@ -21,6 +22,7 @@ const BlogComp = () => {
       }
     })();
   }, []);
+  let data;
   return (
     <>
       <section id="blogs" class="doctors">
@@ -31,27 +33,30 @@ const BlogComp = () => {
           </div>
 
           <div class="row">
-            {blogs?.map((item, i) => (
+            {blogs?.slice(0, 3).map((item, i) => (
               <>
-                <div class="col-lg-4 col-md-6 my-2">
+                <div className="container1 col-lg-4 col-md-6">
                   <Link
                     className="text-dark"
                     to={{ pathname: "/blog", state: item }}
                   >
-                    <div class="member d-flex align-items">
-                      <div class="pix">
-                        <img src={item.img} class="img-fluid" alt="" />
+                    <div className="card1 ">
+                      <div className="card__header1">
+                        <img
+                          src={item.img}
+                          alt="card__image"
+                          className="card__image1 img1"
+                          width={600}
+                        />
                       </div>
-                      <div class="member-info">
+                      <div className="card__body1">
                         <h4>
-                          {item.title.length > 40
-                            ? `${item.title.slice(0, 30)}. . .`
-                            : item.title}
+                          <b>{item.title.slice(0, 30)}</b>
                         </h4>
-                        {/* <span>M.S.</span> */}
-                        <p className="span">
-                          {ReactHtmlParser(item.description)}{" "}
-                          {/* <span>{`. . .`}</span> */}
+                        <p className="text-secondary">
+                          {item.short_description?.length > 40
+                            ? `${item.short_description.slice(0, 40)} . . . `
+                            : item.short_description}
                         </p>
                       </div>
                     </div>
