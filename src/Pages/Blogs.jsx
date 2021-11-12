@@ -51,7 +51,7 @@ const Blogs = (props) => {
           <div class="row">
             {blogs?.map((item, i) => (
               <>
-                <div className="container1 col-lg-4 col-md-6">
+                <div className="container1 col-lg-4 col-md-6" height={400}>
                   <Link
                     className="text-dark"
                     to={{ pathname: "/blog", state: item }}
@@ -60,9 +60,10 @@ const Blogs = (props) => {
                       <div className="card__header1">
                         <img
                           src={item.img}
-                          alt="card__image"
+                          alt="card__image1"
                           className="card__image1 img1"
                           width={600}
+                          height={300}
                         />
                       </div>
                       <div className="card__body1">

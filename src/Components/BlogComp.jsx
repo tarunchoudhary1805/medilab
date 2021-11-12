@@ -15,7 +15,7 @@ const BlogComp = () => {
         const val = await response.json();
         console.log(val);
         if (val) {
-          setBlogs(val);
+          setBlogs(val.reverse());
         }
       } catch (error) {
         console.log(error.message);
@@ -44,9 +44,10 @@ const BlogComp = () => {
                       <div className="card__header1">
                         <img
                           src={item.img}
-                          alt="card__image"
+                          alt="card__image1"
                           className="card__image1 img1"
                           width={600}
+                          height={300}
                         />
                       </div>
                       <div className="card__body1">
