@@ -68,11 +68,13 @@ const BlogComp = () => {
             <br />
             <br />
             <div className="text-center">
-              <button class="btn-primary  mt-4 text-white  btn">
-                <Link className="text-white" to="/blogs">
-                  Read more Blogs
-                </Link>
-              </button>
+              <Link
+                className="text-dark btn "
+                style={{ textDecoration: "underline" }}
+                to="/blogs"
+              >
+                Read more Blogs
+              </Link>
             </div>
           </div>
         </div>

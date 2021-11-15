@@ -15,6 +15,8 @@ import Thoracic from "../TreatmentsPages/Thoracic";
 import UroOncolgy from "../TreatmentsPages/UroOncology";
 import Blogs from "../Pages/Blogs";
 import Blog from "../Pages/Blog";
+import Images from "../Pages/Images";
+import Image from "../Pages/Image";
 
 const PrimaryRoutes = () => {
   return (
@@ -34,6 +36,8 @@ const PrimaryRoutes = () => {
         <Route path="/UroOncology" component={UroOncolgy} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/blog" component={Blog} />
+        <Route path="/images" component={Images} />
+        <Route path="/image" component={Image} />
       </Switch>
     </>
   );
